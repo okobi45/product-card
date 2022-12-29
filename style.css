@@ -15,7 +15,6 @@ body {
 
 .container {
     background-color: hsl(0, 0%, 100%);
-    border: 2px solid red;
     width: 600px;
     height: 450px;
     display: flex;
@@ -24,14 +23,17 @@ body {
     font-size: 14px;
 }
 
-.imgbox img {
+.imgbox picture img {
     width: 300px;
     height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .contentbox {
     padding: 30px;
-    border: 1px solid blue;
 }
 
 h1 {
@@ -56,7 +58,7 @@ h3 {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     color: hsl(230, 5%, 53%);
-    line-height: 20px;
+    line-height: 25px;
 }
 
 .pprice {
@@ -90,3 +92,92 @@ button {
     height: 50px;
     border: none;
 }
+
+/* For Mobile Screen  */
+
+
+@media (max-width: 450px) {
+
+    body {
+        background-color: hsl(26, 35%, 92%);
+        width: 375px;
+        height: 620px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background-color: hsl(0, 0%, 100%);
+        width: 340px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .imgbox picture img {
+        width: 340px;
+        height: 250px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .contentbox {
+        padding: 10px 10px 10px 20px;
+    }
+    
+    h1 {
+        padding-bottom: 15px;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 30px;
+    }
+    
+    h3 {
+        padding-bottom: 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: hsl(230, 5%, 53%);
+        font-size: 14px;
+    }
+    
+    .ptext {
+        padding-bottom: 10px;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        color: hsl(230, 5%, 53%);
+        padding: 0px 30px 0px 0px;
+        line-height: 25px;
+    }
+    
+    .pprice {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px !important;
+    }
+    
+    .one {
+        color:hsl(153, 23%, 41%);
+        font-weight: 700;
+        font-family: 'Fraunces', serif;
+        font-size: 25px;
+    }
+    
+    .two {
+        font-size: 12px;
+        text-decoration: line-through;
+        color: hsl(230, 5%, 53%);
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    button {
+        width: 300px;
+        background-color: hsl(153, 23%, 41%);
+        color: hsl(0, 0%, 100%);
+        border-radius: 10px;
+        height: 50px;
+        border: none;
+    }
+
+  }
