@@ -23,7 +23,7 @@ body {
     font-size: 14px;
 }
 
-.imgbox picture img {
+img {
     width: 300px;
     height: 450px;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@ button {
 /* For Mobile Screen  */
 
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
 
     body {
         background-color: hsl(26, 35%, 92%);
@@ -115,7 +115,7 @@ button {
         flex-direction: column;
     }
     
-    .imgbox picture img {
+    img {
         width: 340px;
         height: 250px;
         border-radius: 10px 10px 0px 0px;
